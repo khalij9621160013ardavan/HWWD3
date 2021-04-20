@@ -21,7 +21,7 @@
   .table-container {
   position: relative;
   max-height:  300px;
-  width: min-width;
+  width: max-width;
   overflow: scroll;
 }
 }
