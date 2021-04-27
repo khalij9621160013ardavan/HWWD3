@@ -18,7 +18,12 @@ html{
    background-color: black;
    color: white;
    text-align: center;
-   font-family: "VAZIR"
+   font-family: "Avenir"
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url('Avenir.ttc') format('truetype');
 }
 
 @font-face {
