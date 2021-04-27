@@ -18,13 +18,19 @@ html{
    background-color: black;
    color: white;
    text-align: center;
-   font-family: "VAZIR"
+   font-family: "Avenir"
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url('Avenir.ttc') format('truetype');
 }
 
 @font-face {
   font-family: 'VAZIR';
   src:  url('Vazir.ttf') format('truetype');
 }
+HoneyScript-Light
 
 a:link, a:visited {
   background-color: #f44336;
