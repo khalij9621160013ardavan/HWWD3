@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="rtl" lang="fa">
+	<head>
+		<link rel="stylesheet" href="styles1.css">
+		<meta charset="UTF-8">
+		<title>اردوان خلیج</title>
+	</head>
+	<body>
+		<meta charset="UTF-8">
+		<div class="grid-container">
+			<div id="header-menu" class="item1">
+				<div class="flex-container">
+					<div>
+						<a href="index.html" class="button">مشخصات شخصی</a>
+  					</div>
+  					<div>
+  						<a id="list-Items" href="AcademicCV.html" class="button">مشخصات تحصیلی</a>
+  					</div>
+  					<div>
+  						<a href="ArtisticCV.html" class="button">مشخصات هنری</a>
+  					</div>
+				</div>
+			</div>
+			<div id="picture" class="item4">
+				<h4>علاقه مندی های تحقیقاتی</h4>
+			</div>
+			<div id="comminu" class="item5">
+				<ol>
+					<li><h4>هوش مصنوعی</h4></li>
+					<li><h4>یادگیری ماشین</h4></li>
+					<li><h4>داده کاوی</h4></li>
+					<li><h4>بیوانفورماتیک</h4></li>
+				</ol>
+			</div>
+			<div id="personal" class="item6">
+				<h4>سابقه حل تمرین</h4>
+			</div>
+			<div id="sum" class="item7">
+				<h4>عنوان: حل تمرین اخترفیزیک</h4>
+				<h5>مکان: دبیرستان سلام دیباجی</h5>
+				<h5>زمان: سال تحصیلی ۹۴-۹۵</h5>
+			</div>
+			<div id="sump" class="item8">
+				<h4>عنوان: حل تمرین طراحی الگوریتم</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۸-۹۹</h5>
+				<h5>استاد درس: دکتر سلیمی سرتختی</h5>
+			</div>
+			<div id="email" class="item9">
+				<h4>عنوان: حل تمرین مبانی کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۸-۹۹</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="instagram" class="item10">
+				<h4>عنوان: حل تمرین مبانی کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۹-۰۰</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="telegram" class="item11">
+				<h4>عنوان: کارگاه کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۹-۰۰</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="twitter" class="item12">
+				<h4>آزمون های بین المللی</h4>
+			</div>
+			<div id="youtube" class="item13">
+				<h3>IELTS Academic: 6.5</h3>
+				<h5>Listening: 7.5</h5>
+				<h5>Reading: 6.5</h5>
+				<h5>Writing: 6.0</h5>
+				<h5>Speaking: 6.0</h5>
+			</div>
+			<div id="facebook" class="item14">
+				<h3>GRE General: 298</h3>
+				<h5>Quantitive: 162</h5>
+				<h5>Verbal: 137</h5>
+				<h5>Writing: 2.5</h5>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>© Made with ❤️ by Ardavan Khalij</h4>
+		</div>
+		<script>
+			
+			var lm_color = 1;
+            function changeColor() {
+                var x = document.getElementById("list-Items");
+                //console.log(Cu_color);
+                if (lm_color == 1){
+                    x.style.color = "black";
+                    lm_color = 0;
+                }
+                else{
+                    x.style.color = "white";
+                    lm_color = 1;
+                }
+            }       
+            window.setInterval(changeColor,500);
+			
+            document.getElementById("picture").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#8b0000";
+            });
+            document.getElementById("picture").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });  
+            
+            document.getElementById("comminu").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#00008b";
+            });
+            document.getElementById("comminu").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+			document.getElementById("header-menu").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#ffae42";
+            });
+            document.getElementById("header-menu").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("personal").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "green";
+            });
+            document.getElementById("personal").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("sum").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "purple";
+            });
+            document.getElementById("sum").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("sump").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "grey";
+            });
+            document.getElementById("sump").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("email").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "blue";
+            });
+            document.getElementById("email").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("instagram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#e4405f";
+            });
+            document.getElementById("instagram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("telegram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#0088cc";
+            });
+            document.getElementById("telegram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("twitter").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#55acee";
+            });
+            document.getElementById("twitter").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("youtube").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "red";
+            });
+            document.getElementById("youtube").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            
+            document.getElementById("facebook").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "#4267B2";
+            });
+            document.getElementById("facebook").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("grid-container");
+                elements[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+          </script>
+	</body>
+</html>
